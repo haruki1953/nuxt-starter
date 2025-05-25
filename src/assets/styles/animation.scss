@@ -1,0 +1,39 @@
+.blinking-1s {
+  animation: blink 1s infinite;
+}
+
+.blinking-2s {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes popover-action-label-animation {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    top: var(--wh-header--sticky-start)
+  }
+
+  to {
+    top: var(--wh-header--sticky-top)
+  }
+}
